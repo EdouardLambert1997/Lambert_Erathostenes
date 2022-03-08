@@ -81,6 +81,14 @@ i=2;
 (*listPrim).cPrimes++;
 for (j=i*i; j <= n && j>0; j += i)
     setbitarray(tab, j);
+    
+for (i=3; i <= racine; i+=2){
+              if(!issetbitarray(tab, i))
+                    {
+                        for (j=i*i; j <= n && j>0; j += i*2)
+                            setbitarray(tab, j);
+                    }
+  }
 }
 free(tab); 
         
