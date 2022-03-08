@@ -56,7 +56,9 @@ int main(int argc, char* argv[]) {
 }
 
 void InitializeTListPrimes(struct TListPrimes* listPrim){
-    
+    (*listPrim).cPrimes = 0;
+    (*listPrim).maximum = 0;
+    (*listPrim).pPrimes = NULL; 
 }
 void Erathostenes(struct TListPrimes* listPrim){
     
