@@ -76,6 +76,16 @@ for (i=2; i <= n && i>0; ++i){
     setbitarray(tab, i);
 }
 
+for (i=2; i <= racine && i>0; ++i){
+                
+    if(issetbitarray(tab, i)){
+                        
+        for (j=i; i*j <= n && i*j>0; ++j){
+            unsetbitarray(tab, i*j);
+        }
+   }
+}
+
     
 }
 void ShowPrimes2(struct TListPrimes* listPrim){
