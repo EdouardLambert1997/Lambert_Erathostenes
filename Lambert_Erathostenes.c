@@ -86,6 +86,12 @@ for (i=2; i <= racine && i>0; ++i){
    }
 }
 
+for(i=2; i <= n && i>0; ++i){
+     if(issetbitarray(tab, i)){
+        (*listPrim).cPrimes++;
+     }
+}
+(*listPrim).pPrimes = calloc(listPrim ->cPrimes, sizeof(uint32));
     
 }
 void ShowPrimes2(struct TListPrimes* listPrim){
