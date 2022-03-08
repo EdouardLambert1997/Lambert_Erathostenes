@@ -76,30 +76,12 @@ void Erathostenes(struct TListPrimes* listPrim){
         
 
 
-for (i=2; i <= racine && i>0; ++i){
-                
-    if(issetbitarray(tab, i)){
-                        
-        for (j=i; i*j <= n && i*j>0; ++j){
-            unsetbitarray(tab, i*j);
-        }
-   }
+if(n >= 2){
+i=2;
+(*listPrim).cPrimes++;
+for (j=i*i; j <= n && j>0; j += i)
+    setbitarray(tab, j);
 }
-
-for(i=2; i <= n && i>0; ++i){
-     if(issetbitarray(tab, i)){
-        (*listPrim).cPrimes++;
-     }
-}
-(*listPrim).pPrimes = calloc(listPrim ->cPrimes, sizeof(uint32));
-
-for(i=2; i <= n; ++i){
-    if(issetbitarray (tab, i)){
-    (*listPrim).pPrimes[indice] = i;
-    indice++;
-    }  
-}
-
 free(tab); 
         
 }
