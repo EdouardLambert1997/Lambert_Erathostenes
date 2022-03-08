@@ -61,6 +61,12 @@ void InitializeTListPrimes(struct TListPrimes* listPrim){
     (*listPrim).pPrimes = NULL; 
 }
 void Erathostenes(struct TListPrimes* listPrim){
+        uint32* tab;
+        int n;
+        uint32 i;
+        uint32 j;
+        int indice = 0;
+        int racine;
     
 }
 void ShowPrimes2(struct TListPrimes* listPrim){
