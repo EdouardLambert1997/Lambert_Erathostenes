@@ -94,6 +94,7 @@ for( i=3; i <= n && i>0; i+=2){
     if(!issetbitarray(tab, i)){
     (*listPrim).cPrimes++;
     }
+}
 (*listPrim).pPrimes = calloc(listPrim ->cPrimes, sizeof(uint32));
 
     (*listPrim).pPrimes[0] = 2;
@@ -104,12 +105,12 @@ for(i=3; i <= n && i>0; i+=2){
     indice++;
     }
  }
-}
+
 free(tab); 
         
 }
-    
-}
+}    
+
 void ShowPrimes2(struct TListPrimes* listPrim){
     int i;
     int j = 1;
