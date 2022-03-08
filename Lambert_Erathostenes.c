@@ -96,6 +96,14 @@ for( i=3; i <= n && i>0; i+=2){
     }
 (*listPrim).pPrimes = calloc(listPrim ->cPrimes, sizeof(uint32));
 
+    (*listPrim).pPrimes[0] = 2;
+    indice++;
+for(i=3; i <= n && i>0; i+=2){
+    if(!issetbitarray(tab, i)){
+    (*listPrim).pPrimes[indice] = i;
+    indice++;
+    }
+ }
 }
 free(tab); 
         
