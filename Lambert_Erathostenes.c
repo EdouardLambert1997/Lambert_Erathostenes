@@ -106,7 +106,18 @@ free(tab);
     
 }
 void ShowPrimes2(struct TListPrimes* listPrim){
-    
+    int i;
+    int j = 1;
+    printf("Il y a %d nombre premiers inferieurs a %d \n", listPrim ->cPrimes, listPrim ->maximum);
+    for (i = 0; i < listPrim ->cPrimes; ++i)
+        {
+        if(i <= 9 || (i >= listPrim ->cPrimes-10) )
+          printf("Nombre premier n      %d :          %d \n", i+1, listPrim ->pPrimes[i]);
+          else if(j){
+              puts("...");
+              j = 0;
+              }     
+        } 
 }
 void DestroyTListPrimes(struct TListPrimes* listPrim){
     
