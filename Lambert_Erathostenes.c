@@ -89,6 +89,13 @@ for (i=3; i <= racine; i+=2){
                             setbitarray(tab, j);
                     }
   }
+
+for( i=3; i <= n && i>0; i+=2){ 
+    if(!issetbitarray(tab, i)){
+    (*listPrim).cPrimes++;
+    }
+(*listPrim).pPrimes = calloc(listPrim ->cPrimes, sizeof(uint32));
+
 }
 free(tab); 
         
