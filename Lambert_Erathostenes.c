@@ -71,6 +71,11 @@ void Erathostenes(struct TListPrimes* listPrim){
         n = (*listPrim).maximum;
         tab = calloc((n/32), sizeof(uint32));
         racine = (int)sqrt(n);
+        
+for (i=2; i <= n && i>0; ++i){
+    setbitarray(tab, i);
+}
+
     
 }
 void ShowPrimes2(struct TListPrimes* listPrim){
