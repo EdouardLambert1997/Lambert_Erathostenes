@@ -33,6 +33,11 @@ struct TListPrimes {
     int cPrimes; /*nbre entier stocker*/
 };
 
+void InitializeTListPrimes(struct TListPrimes* listPrim);
+void Erathostenes(struct TListPrimes* listPrim);
+void ShowPrimes2(struct TListPrimes* listPrim);
+void DestroyTListPrimes(struct TListPrimes* listPrim);
+
 int main(int argc, char* argv[]) {
     clock_t ct1, ct2;
     struct TListPrimes listPrimes;
@@ -48,4 +53,17 @@ int main(int argc, char* argv[]) {
         DestroyTListPrimes(&listPrimes);
     } while(!Stop());
     return EXIT_SUCCESS;
+}
+
+void InitializeTListPrimes(struct TListPrimes* listPrim){
+    
+}
+void Erathostenes(struct TListPrimes* listPrim){
+    
+}
+void ShowPrimes2(struct TListPrimes* listPrim){
+    
+}
+void DestroyTListPrimes(struct TListPrimes* listPrim){
+    
 }
