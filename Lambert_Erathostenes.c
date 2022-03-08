@@ -120,5 +120,7 @@ void ShowPrimes2(struct TListPrimes* listPrim){
         } 
 }
 void DestroyTListPrimes(struct TListPrimes* listPrim){
-    
+    free((*listPrim).pPrimes);
+    (*listPrim).cPrimes = 0;
+    (*listPrim).maximum = 0;
 }
